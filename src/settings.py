@@ -1,4 +1,3 @@
+from datetime import datetime
 
-
-START_DATE = "2015-01-01"
-END_DATE = "2026-09-30"
+END_DATE = datetime.strptime("2026-09-30", "%Y-%m-%d")
