@@ -1,0 +1,1 @@
+Cleaned Ken French 12 industry portfolio returns (value-weighted, monthly); code and raw data are on the main branch.

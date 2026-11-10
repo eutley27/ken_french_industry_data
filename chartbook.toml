@@ -1,0 +1,20 @@
+[project]
+name = "Ken French 12 Industry Portfolios (value-weighted, monthly)"
+description = "Monthly value-weighted returns of the 12 Fama-French industry portfolios, July 1926 to September 2026, cleaned from Kenneth French's Data Library for the FINM 32800 class report."
+
+[dataframes.french_12_ind_vw_monthly]
+name = "12 Industry Portfolios, Value-Weighted, Monthly"
+description = "Monthly value-weighted returns of the 12 Fama-French industry portfolios, as decimals, from 1926-07-31 to 2026-09-30."
+path = "french_12_ind_vw_monthly.csv"
+date_col = "date"
+docs = """One row per month, dated at month-end, and one column per industry:
+NoDur, Durbl, Manuf, Enrgy, Chems, BusEq, Telcm, Utils, Shops, Hlth, Money,
+Other. Returns are decimals (0.0367 is 3.67%), rounded to 4 places, which is
+the full precision of the source. Missing values, if any, are blank.
+
+Source: the 12 Industry Portfolios file in Kenneth R. French's Data Library
+(https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html),
+built from the 202609 CRSP database. The table used is "Average Value Weighted
+Returns -- Monthly". The cutoff is END_DATE = 2026-09-30, committed in
+src/settings.py on the main branch of this repository, which also holds the
+raw file and the cleaning code."""
